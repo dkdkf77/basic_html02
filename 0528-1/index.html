@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>사이트만들기1</title>
+    <style>
+        /* 기본스타일 */
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            font-family: '맑은고딕';
+            font-size: 12px;
+            color: #555555;
+        }
+        a{
+            text-decoration: none;
+            color: #555555;
+        }
+        ul,li{
+            list-style: none;
+        }
+        img{
+            border: 0px;
+        }
+        /* 레이아웃 스타일 */
+
+        #wrap {
+            width: 100%;
+        }
+
+        /* 헤더 */
+
+        #header{
+            width: 100%;
+            height: 90px;
+        }
+        #header_in {
+            width: 1000px;
+            height: 90px;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        #header_in .logo{
+            float: left;
+            margin: 24px 0 0 50px;
+        }
+
+        #header_in .nav{
+            float: left;
+            margin: 35px 0 0 70px;
+
+        }
+
+        #header_in .nav li {
+            float: left;
+            margin-right: 40px;
+        }
+
+        #header_in .nav li a {
+            font-size: 18px;
+            font-weight: bold;
+            color: #000;
+        }
+        #header_in .info_mn{
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
+
+        #header_in .info_mn li {
+            float: left;
+            margin-right: 15px;
+        }
+
+        #header_in .info_mn li a {
+            font-size: 11px;
+            
+            color: #000;
+        }
+
+        /* 메인 이미지 */
+
+        #main_img{
+            width: 100%;
+            height: 260px;
+        }
+        #main_img #main_img_in{
+            width: 1000px;
+            height: 260px;
+            margin: 0 auto;
+        }
+
+        /* 콘텐츠 */
+        #contents{
+            width: 100%;
+            height: 270px;
+            background-color: brown;
+        }
+        #contents_in{
+            width: 1000px;
+            height: 270px;
+            margin: 0 auto;
+            background-color: antiquewhite;
+        }
+
+        #contents_in > div{
+            float: left;
+        }
+        #contents .go_btns{
+            width: 360px;
+            height: 130px;
+            background-color: blue;
+         
+        }
+        #contents .notice{
+            width: 300px;
+            height: 130px;
+            background-color: #555555;
+            
+        }
+        #contents .go_btns > a {
+            float: left;
+        }
+        #contents .go_btns .btn1{
+            margin: 25px 0 0 20px;
+        }
+        #contents .go_btns .btn2{
+            margin: 25px 0 0 15px;
+        }
+        #contents .go_btns .btn3{
+            margin: 5px 0 0 15px;
+        }
+    
+
+        #contents .news{
+            width: 330px;
+            height: 130px;
+            background-color: blueviolet;
+        }
+        #contents .service{
+            width: 360px;
+            height: 120px;
+            background-color: red;
+        }
+        #contents .product{
+            width: 640px;
+            height: 120px;
+            background-color: yellow;
+        }
+
+        /* 푸터 */
+        #footer{
+            width: 100%;
+            height: 80px;
+            background-color: chocolate;
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <!-- 상단부분 -->
+        <div id="header">
+            <div id="header_in">
+                <h1 class="logo"><img src="./images/logo.jpg" alt=""></h1>
+                <ul class="nav">
+                    <li><a href="#">회사소개</a></li>
+                    <li><a href="#">사업분야</a></li>
+                    <li><a href="#">제품정보</a></li>
+                    <li><a href="#">채용정보</a></li>
+                    <li><a href="#">커뮤니티</a></li>
+                </ul>
+                <ul class="info_mn">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Sitemap</a></li>
+                    <li><a href="#">Contact us</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- 메인이미지 -->
+        <div id="main_img">
+            <div id="main_img_in">
+                <img src="images/main_img.jpg" alt="">
+            </div>
+        </div>
+        <!-- 콘덴츠 부분 -->
+        <div id="contents">
+            <div id="contents_in">
+                <div class="go_btns">
+                    <a href="#" class="btn1"><img src="./images/banner01.jpg" alt=""></a>
+                    <a href="#" class="btn2"><img src="./images/banner02.jpg" alt=""></a>
+                    <a href="#" class="btn3"><img src="./images/banner03_bg.jpg" alt=""></a>
+                </div>
+                <div class="notice"></div>
+                <div class="news"></div>
+                <div class="service"></div>
+                <div class="product"></div>
+            </div>
+        </div>
+        <!-- footer -->
+        <div id="footer"></div>
+    </div>
+</body>
+</html>
